@@ -82,18 +82,18 @@
     </header>
 
     <main class="principal">
-        <form action="GET">
+        <form action="link.php" method="POST">
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Name</label>
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Lucas">
+                <input type="text" name="nome" class="form-control" id="exampleFormControlInput1" placeholder="Lucas">
             </div>
             <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
             </div>
             <div class="mb-3"></div>
                 <label for="inputPassword5" class="form-label">Password</label>
-                <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="*********     ">
+                <input type="password" name="senha" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="*********     ">
             </div>
             <a class="nav-link-login nav-link active " aria-current="page" href="/pag/user/login.html">Login</a>
             <div class="col-auto">
