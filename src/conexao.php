@@ -1,16 +1,25 @@
 <?php
 
-$servidor = "localhost";
-$usuario = "root";
-$senha = "";
-$banco = "hm";
+class Conexao{
 
-$conexao = new mysqli($servidor, $usuario, $senha, $banco);
+    private $servidor = "localhost";
+    private $usuario = "root";
+    private $senha = "";
+    private $banco = "hm";
+    private $conexao;
 
-if ($conexao->connect_error){
-    die ("Falha na conexão: " . connect_error);
-} 
+    public function conectar() {
 
-echo "Conectado com sucesso";
+        $this->conexao = new mysqli($this->servidor, $this->usuario, $this->senha, $this->banco);
+
+        if ($this->conexao->connect_error){
+            die ("Falha na conexão: " . connect_error);
+        } 
+    
+        echo "Conectado com sucesso";
+        return $this->conexao;
+    }
+
+}
 
 ?>

@@ -23,15 +23,15 @@ class Usuario {
         $this->senha = $senha;
     }
 
-    function getNome(string $nome) {
+    function getNome() {
         return $this->nome;
     }
 
-    function getEmail(string $email) {
+    function getEmail() {
         return $this->email;
     }
 
-    function getSenha(string $senha) {
+    function getSenha() {
         return $this->senha;
     }
 }

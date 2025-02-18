@@ -1,11 +1,14 @@
 <?php
 
-include '../../src/usuario.php';
-include '../../src/repositorio.php';
+require_once '../../src/usuario.php';
+require_once '../../src/repositorio.php';
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $usuario = new Usuario($_POST["nome"],$_POST["email"],$_POST["senha"]);
-    echo "ok";
-}
+$usuario = new Usuario($_POST["nome"], $_POST["email"], $_POST["senha"]);
+
+$cadastrar = new Repositorio();
+$cadastrar->cadastro($usuario->getNome(),$usuario->getEmail(),$usuario->getSenha());
+
+header("Location: ./perfil/perfil.html");
+
 
 ?>
