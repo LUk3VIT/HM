@@ -13,7 +13,7 @@ class Conexao{
         $this->conexao = new mysqli($this->servidor, $this->usuario, $this->senha, $this->banco);
 
         if ($this->conexao->connect_error){
-            die ("Falha na conexão: " . connect_error);
+            die ("Falha na conexão: " . 'connect_error');
         } 
     
         echo "Conectado com sucesso";

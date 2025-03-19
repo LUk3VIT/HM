@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HM - Inimigos Lista</title>
+    <link rel="stylesheet" href="../style/reset/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style/css/main.css">
+    <link rel="stylesheet" href="../style/css/ficha_inimigos.css">
+</head>
+
+<body class="Corpo">
+    <header class="cabecalho">
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html">Help Master</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Help Master</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="inimigos.html">Inimigos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Npcs</a>
+                            </li>
+                           
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Adicioanais
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">Itens</a></li>
+                                    <li><a class="dropdown-item" href="#">Armaduras</a></li>
+                                    <li><a class="dropdown-item" href="#">Magias</a></li>
+                                    <li><a class="dropdown-item" href="#">Itens magicos</a></li>
+                                    <li><a class="dropdown-item" href="#">Recompensas</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Fechar</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </form>
+                        <div class="login">
+                            <ul class="nav justify-content-center">
+                                <li class="nav-item">
+                                  <a class="nav-link active" aria-current="page" href="">Login</a>
+                                </li>
+                                <li class="nav-item">
+                                  <a class="nav-link" href="">Cadastro</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main class="principal fixed">
+
+        <div class="pesquisa">
+
+            <form class="pesquisa_form" action="#">
+                <label for="validationDefault01" class="form-label">Pesquisa</label>
+                <input type="text" class="form-control" id="validationDefault01" value="Goblim" required>
+            </form>
+
+        </div>
+
+        <div class="mostroario">
+
+            <form class="card" action="" method="POST">
+                    
+                <div class="apresentacao">
+                        <div class="caixa_img">
+                            <img src="" alt="">
+                        </div>
+
+                        <div class="info">
+                            <div class="info_sup">
+                                <form action="" method="POST">
+                                    <input class="card-title" type="text" placeholder="Nome do Monstro">
+                                    <input type="text" placeholder="Tipo">
+                                    <input type="text" placeholder="Tamanho">
+                                    <input type="text" placeholder="Alinhamento">
+                            </div>
+
+                            <div class=info_inf>
+
+                                <label p class="info_inf_p">Classe de armadura: </label>
+                                <input type="text" disabled>
+
+                            <div>    
+                                <label>Vida: </label>
+                                <button> + </button>
+                                <input type="number">
+                                <button> - </button>   
+                            </div>
+                                <label class="info_inf_p">Deslocamento</label>
+                                <input type="text" disabled>
+                            </div>
+                        </div>
+                </div>
+                <div class="atributos">
+                        <table class="atributos_table">
+
+                            <tr class="atributos_table_row">
+                                <td class="atributos_table_colum"> For </td>
+                                <td class="atributos_table_colum"> Des </td>
+                                <td class="atributos_table_colum"> Con </td>
+                                <td class="atributos_table_colum"> Int </td>
+                                <td class="atributos_table_colum"> Sab </td>
+                                <td class="atributos_table_colum"> Car </td>
+                            </tr>
+
+                            <tr class="atributos_table_row_edi">
+                                <input type="number" class="atributos_table_colum" >
+                                <input type="number" class="atributos_table_colum" >
+                                <input type="number" class="atributos_table_colum" >
+                                <input type="number" class="atributos_table_colum" >
+                                <input type="number" class="atributos_table_colum" >
+                                <input type="number" class="atributos_table_colum" >
+                            </tr>
+
+                            <tr class="atributos_table_row">
+                                <td class="atributos_table_colum"> -1 </td>
+                                <td class="atributos_table_colum"> +2 </td>
+                                <td class="atributos_table_colum"> 0 </td>
+                                <td class="atributos_table_colum"> 0 </td>
+                                <td class="atributos_table_colum"> -1 </td>
+                                <td class="atributos_table_colum"> -1 </td>
+                            </tr>
+
+                        </table>
+                </div>
+
+                <div class="outros">
+                        <ul class="list">
+                            <li class="list-group-item">Perícias: Furtividade+6</li>
+                            <li class="list-group-item">Sintidos: Visão no escuro 18m, Percepção Passiva 9</li>
+                            <li class="list-group-item">Idiomas: Comum, Goblin</li>
+                            <li class="list-group-item">Niviel de desafil: 1/4 (50xp)</li>
+                        </ul>
+                </div>
+
+                <div class="habilidade">
+                        <ul class="list">
+                            <li>
+                                <p class="list_p">Escapada Ágil</p> O goblin pode realizar a ação de Desengajar ou
+                                Esconder-se com uma ação bônus em cada um dos seus turnos.
+                            </li>
+                        </ul>
+                </div>
+
+                <div class="acoes">
+                        <h6>Açoes</h6>
+                        <p>Cimitarra. Ataque Corpo-a-corpo: +4 para atingir, alcanca 1.5m, um alvo. Dano Cortante: 1d6+2 (5)
+                        </p>
+                        <p>Arco Curto. Ataque á Distancia: +4 para atingir, Distância 24/96m, um alvo. Dano Perfurante:
+                            1d6+2 (5)</p>
+                </div>
+                <div class="card-body">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Adicionar a campanha
+                        </button>
+
+                        <!-- Modal -->
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h1 class="modal-title fs-5" id="exampleModalLabel">Escolha em qual campanha queira salvar</h1>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <form action="">
+                                        <div class="modal-body">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                Default checkbox
+                                                </label>
+                                            </div>
+                                            
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                Checked checkbox
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Fechar</button>
+                                            <button type="button" class="btn btn-primary">Salvar</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+            </form>
+
+        </div>
+    </main>
+
+    <footer class="rodape bg-dark">
+        <p class="rodape_texto">Help Master criado por Lucas Dias</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,155 @@
+.principal {
+    align-items: normal;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    padding: 60px;
+}
+
+.pesquisa {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pesquisa_form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+}
+
+.mostroario {
+    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    padding: 45px;
+}
+
+.card {
+    margin: 5px;
+    width: 55rem;
+    height: 57rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background: #F5DEB3;
+    border: solid 2px #FF8C00;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    flex-wrap: nowrap;
+}
+
+.caixa_img {
+    width: 66%;
+    background: #fff;
+    border: solid 0.5px black;
+}
+
+.info {
+    margin: 5px 0px 5px 7.5px;
+    padding: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.info_sup {
+    margin: 0px 0px 35px 0px;
+    border: solid 2px #800000;
+    width: 100%;
+    padding: 5px;
+}
+
+.info_inf{
+    border: solid 2px #800000;
+    width: 100%;
+    padding: 5px;
+}
+
+.info_inf_p {
+    padding: 0;
+    margin: 0;
+}
+
+.atributos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: 5px 0px;
+    border: solid 2px #800000;
+    width: 100%;
+}
+
+.atributos_table {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 7px;
+    justify-content: center;
+    width: 50rem;
+}
+
+.atributos_table_row {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.atributos_table_row_edi{
+    
+}
+
+.atributos_table_colum{
+    display: flex;
+    justify-content: center;
+    margin: 1.5px 3rem;
+}
+
+.outros{
+    border: solid 2px #800000;
+    width: 100%;
+    padding: 2px;
+    margin: 5px 0px;
+}
+
+.list{
+    padding: 5px;
+    margin: 10px 20px;
+}
+
+.habilidade{
+    border: solid 2px #800000;
+    width: 100%;
+    padding: 2px;
+    margin: 5px 0px;
+}
+
+.list_p{
+    color: #FF4500;
+}
+
+.acoes{
+    border: solid 2px #800000;
+    width: 100%;
+    padding: 2px;
+    margin: 5px 0px;
+}
