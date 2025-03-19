@@ -115,7 +115,11 @@
 }
 
 .atributos_table_row_edi{
-    
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .atributos_table_colum{
@@ -123,6 +127,19 @@
     justify-content: center;
     margin: 1.5px 3rem;
 }
+
+.atributos_table_colum_edi{
+    display: flex;
+    justify-content: center;
+    margin: 1.5px 3rem;
+    width: 25px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
 
 .outros{
     border: solid 2px #800000;
@@ -134,6 +151,8 @@
 .list{
     padding: 5px;
     margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 .habilidade{

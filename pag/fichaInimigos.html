@@ -80,99 +80,111 @@
 
 
     <main class="principal fixed">
-
         <div class="pesquisa">
-
             <form class="pesquisa_form" action="#">
                 <label for="validationDefault01" class="form-label">Pesquisa</label>
                 <input type="text" class="form-control" id="validationDefault01" value="Goblim" required>
             </form>
-
         </div>
 
         <div class="mostroario">
-
             <form class="card" action="" method="POST">
-                    
+
                 <div class="apresentacao">
-                        <div class="caixa_img">
-                            <img src="" alt="">
+                    <div class="caixa_img">
+                        <img src="" alt="">
+                    </div>
+
+                    <div class="info">
+                        <div class="info_sup">
+                                <input class="card-title" type="text" placeholder="Nome do Monstro">
+                                <input type="text" placeholder="Tipo">
+                                <input type="text" placeholder="Tamanho">
+                                <input type="text" placeholder="Alinhamento">
                         </div>
 
-                        <div class="info">
-                            <div class="info_sup">
-                                <form action="" method="POST">
-                                    <input class="card-title" type="text" placeholder="Nome do Monstro">
-                                    <input type="text" placeholder="Tipo">
-                                    <input type="text" placeholder="Tamanho">
-                                    <input type="text" placeholder="Alinhamento">
-                            </div>
-
-                            <div class=info_inf>
-
-                                <label p class="info_inf_p">Classe de armadura: </label>
-                                <input type="text" disabled>
-
-                            <div>    
-                                <label>Vida: </label>
-                                <button> + </button>
-                                <input type="number">
-                                <button> - </button>   
-                            </div>
-                                <label class="info_inf_p">Deslocamento</label>
-                                <input type="text" disabled>
-                            </div>
+                        <div class=info_inf>
+                            <label p class="info_inf_p">Classe de armadura: </label>
+                            <input type="text" disabled>
+                        <div>    
+                            <label>Vida: </label>
+                            <button> + </button>
+                            <input type="number">
+                            <button> - </button>   
                         </div>
+                            <label class="info_inf_p">Deslocamento</label>
+                            <input type="text" disabled>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="atributos">
-                        <table class="atributos_table">
+                    <table class="atributos_table">
 
-                            <tr class="atributos_table_row">
-                                <td class="atributos_table_colum"> For </td>
-                                <td class="atributos_table_colum"> Des </td>
-                                <td class="atributos_table_colum"> Con </td>
-                                <td class="atributos_table_colum"> Int </td>
-                                <td class="atributos_table_colum"> Sab </td>
-                                <td class="atributos_table_colum"> Car </td>
-                            </tr>
+                        <tr class="atributos_table_row">
+                            <td class="atributos_table_colum"> For </td>
+                            <td class="atributos_table_colum"> Des </td>
+                            <td class="atributos_table_colum"> Con </td>
+                            <td class="atributos_table_colum"> Int </td>
+                            <td class="atributos_table_colum"> Sab </td>
+                            <td class="atributos_table_colum"> Car </td>
+                        </tr>
 
-                            <tr class="atributos_table_row_edi">
-                                <input type="number" class="atributos_table_colum" >
-                                <input type="number" class="atributos_table_colum" >
-                                <input type="number" class="atributos_table_colum" >
-                                <input type="number" class="atributos_table_colum" >
-                                <input type="number" class="atributos_table_colum" >
-                                <input type="number" class="atributos_table_colum" >
-                            </tr>
+                        <tr class="atributos_table_row_edi">
+                            <td><input type="number" class="atributos_table_colum_edi" ></td>
+                            <td><input type="number" class="atributos_table_colum_edi" ></td>
+                            <td><input type="number" class="atributos_table_colum_edi" ></td>
+                            <td><input type="number" class="atributos_table_colum_edi" ></td>
+                            <td><input type="number" class="atributos_table_colum_edi" ></td>
+                            <td><input type="number" class="atributos_table_colum_edi" ></td>
+                        </tr>
 
-                            <tr class="atributos_table_row">
-                                <td class="atributos_table_colum"> -1 </td>
-                                <td class="atributos_table_colum"> +2 </td>
-                                <td class="atributos_table_colum"> 0 </td>
-                                <td class="atributos_table_colum"> 0 </td>
-                                <td class="atributos_table_colum"> -1 </td>
-                                <td class="atributos_table_colum"> -1 </td>
-                            </tr>
+                        <tr class="atributos_table_row">
+                            <td class="atributos_table_colum"> -1 </td>
+                            <td class="atributos_table_colum"> +2 </td>
+                            <td class="atributos_table_colum"> 0 </td>
+                            <td class="atributos_table_colum"> 0 </td>
+                            <td class="atributos_table_colum"> -1 </td>
+                            <td class="atributos_table_colum"> -1 </td>
+                        </tr>
 
-                        </table>
+                    </table>
+                    <button>Calcular</button>
                 </div>
 
                 <div class="outros">
-                        <ul class="list">
-                            <li class="list-group-item">Perícias: Furtividade+6</li>
-                            <li class="list-group-item">Sintidos: Visão no escuro 18m, Percepção Passiva 9</li>
-                            <li class="list-group-item">Idiomas: Comum, Goblin</li>
-                            <li class="list-group-item">Niviel de desafil: 1/4 (50xp)</li>
-                        </ul>
+                        <article class="list">
+                            <div>
+                                <label>Perícias: </label>
+                                <input type="text">
+                                <button>Adicionar</button>
+                            </div>
+
+                            <div>
+                                <label>Sentidos: </label>
+                                <input type="text">
+                                <button>Adicionar</button>
+                            </div>
+
+                            <div>
+                                <label>Idiomas: </label>
+                                <input type="text">
+                                <button>Adicionar</button>
+                            </div>
+
+                            <div>
+                                <label>ND</label>
+                                <input type="text">
+                                <button>Adicionar</button>
+                            </div>
+                        </article>
                 </div>
 
                 <div class="habilidade">
-                        <ul class="list">
-                            <li>
-                                <p class="list_p">Escapada Ágil</p> O goblin pode realizar a ação de Desengajar ou
-                                Esconder-se com uma ação bônus em cada um dos seus turnos.
-                            </li>
-                        </ul>
+                    <article class="list">
+                        <input class="list_p" type="text" placeholder="Habilidade">
+                        <textarea></textarea>
+                    </article>
                 </div>
 
                 <div class="acoes">
@@ -182,6 +194,7 @@
                         <p>Arco Curto. Ataque á Distancia: +4 para atingir, Distância 24/96m, um alvo. Dano Perfurante:
                             1d6+2 (5)</p>
                 </div>
+
                 <div class="card-body">
                         <!-- Button trigger modal -->
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
