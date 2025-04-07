@@ -92,7 +92,7 @@
                     <div class="info">
                         <div class="info_sup">
                                 <input class="card-title" type="text" placeholder="Nome do Monstro">
-                                <input type="text" placeholder="Tipo">
+                                <input type="text" placeholder="Tipo/Raça">
                                 <input type="text" placeholder="Tamanho">
                                 <input type="text" placeholder="Alinhamento">
                         </div>
@@ -103,7 +103,7 @@
                         <div>    
                             <label>Vida: </label>
                             <button type="button" id="addVida" > + </button>
-                            <input type="number" id="vida">
+                            <input type="number" id="vida" value="0">
                             <button type="button" id="subVida"> - </button>   
                         </div>
                             <label class="info_inf_p">Deslocamento</label>
@@ -126,20 +126,20 @@
 
                         <tr class="atributos_table_row_edi">
                             <td><input type="number" id="for" class="atributos_table_colum_edi"></td>
-                            <td><input type="number" id="des" class="atributos_table_colum_edi" ></td>
-                            <td><input type="number" id="con" class="atributos_table_colum_edi" ></td>
-                            <td><input type="number" id="int" class="atributos_table_colum_edi" ></td>
-                            <td><input type="number" id="sab" class="atributos_table_colum_edi" ></td>
-                            <td><input type="number" id="car" class="atributos_table_colum_edi" ></td>
+                            <td><input type="number" id="des" class="atributos_table_colum_edi"></td>
+                            <td><input type="number" id="con" class="atributos_table_colum_edi"></td>
+                            <td><input type="number" id="int" class="atributos_table_colum_edi"></td>
+                            <td><input type="number" id="sab" class="atributos_table_colum_edi"></td>
+                            <td><input type="number" id="car" class="atributos_table_colum_edi"></td>
                         </tr>
 
                         <tr class="atributos_table_row">
-                            <td class="atributos_table_colum" id="Rfor"> 0 </td>
-                            <td class="atributos_table_colum" id="Rdes"> 0 </td>
-                            <td class="atributos_table_colum" id="Rcon"> 0 </td>
-                            <td class="atributos_table_colum" id="Rint"> 0 </td>
-                            <td class="atributos_table_colum" id="Rsab"> 0 </td>
-                            <td class="atributos_table_colum" id="Rcar"> 0 </td>
+                            <td class="atributos_table_colum" id="Rfor">  </td>
+                            <td class="atributos_table_colum" id="Rdes">  </td>
+                            <td class="atributos_table_colum" id="Rcon">  </td>
+                            <td class="atributos_table_colum" id="Rint">  </td>
+                            <td class="atributos_table_colum" id="Rsab">  </td>
+                            <td class="atributos_table_colum" id="Rcar">  </td>
                         </tr>
 
                     </table>
@@ -186,7 +186,7 @@
 
                 <div class="acoes">
                     <article class="list">
-                        <input type="text">
+                        <input type="text" placeholder="Ação">
                     </article>
                     <button type="button">Adicionar</button>
                 </div>
