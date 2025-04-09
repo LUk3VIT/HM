@@ -10,9 +10,10 @@ sub.addEventListener("click", (evento) => {
     vida.value = parseInt(vida.value) - 1;
 });
 
-const calcAtrib = document.querySelector("calcAtrib");
 
 function calcAtribOnClick(){
+    const calcAtrib = document.querySelector("calcAtrib");
+
     const forc = document.getElementById("for").value;
     const des = document.getElementById("des").value;
     const con = document.getElementById("con").value;
@@ -73,10 +74,26 @@ function calcAtribOnClick(){
         }
     }
 
-    console.log(Ratrib)
-    
+    //Falta o calculo da vida
+
 }
 
+function addInputOnClick(){
+    const div = document.getElementById('inputs');
+    const grupo = document.createElement('div');
 
+    const novoInput = document.createElement('input');
+    novoInput.type = 'text'; 
 
+    const btnRemover = document.createElement('button')
+    btnRemover.textContent = 'x';
+    btnRemover.onclick = function() {
+        subInputOnClick(btnRemover)
+    }
 
+    grupo.
+}
+
+function subInputOnClick(botao){
+    botao.parentNode.remove();
+}
