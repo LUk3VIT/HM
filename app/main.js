@@ -78,22 +78,62 @@ function calcAtribOnClick(){
 
 }
 
-function addInputOnClick(){
-    const div = document.getElementById('inputs');
-    const grupo = document.createElement('div');
-
+function addInputOnClick(idDiv){
+    const div = document.getElementById(idDiv);
     const novoInput = document.createElement('input');
     novoInput.type = 'text'; 
+    novoInput.name = idDiv + '[]';
+    div.appendChild(novoInput);
 
-    const btnRemover = document.createElement('button')
-    btnRemover.textContent = 'x';
-    btnRemover.onclick = function() {
-        subInputOnClick(btnRemover)
-    }
-
-    grupo.
 }
 
-function subInputOnClick(botao){
-    botao.parentNode.remove();
+function subInputOnClick(idDiv){
+    const box = document.getElementById(idDiv);
+    const inputs = box.getElementsByTagName('input');
+    if (inputs.length > 0) {
+       box.removeChild(inputs[inputs.length - 1]);
+    } else {
+        
+    }
+}
+
+function addHabilitOnClick(idDiv){
+    const div = document.getElementById(idDiv);
+
+    const habli = document.createElement('article');
+    habli.className = 'list';
+    habli.innerHTML = `
+        <input class="list_p" name="Habil[]" type="text" placeholder="Habilidade">
+        <textarea></textarea>
+    `
+
+    div.appendChild(habli);
+}
+
+function subHabilitOnClick(idDiv){
+    const box = document.getElementById(idDiv)
+    const arti = box.getElementsByTagName('article')
+    if (arti.length > 0){
+        box.removeChild(arti[arti.length - 1])
+    }
+}
+
+function addAcoesOnClick(idDiv){
+    const div = document.getElementById(idDiv);
+
+    const habli = document.createElement('article');
+    habli.className = 'list';
+    habli.innerHTML = `
+        <input type="text" name="Acoes[]" placeholder="Ação">
+    `
+
+    div.appendChild(habli);
+}
+
+function subAcoesOnClick(idDiv){
+    const box = document.getElementById(idDiv)
+    const arti = box.getElementsByTagName('article')
+    if (arti.length > 0){
+        box.removeChild(arti[arti.length - 1])
+    }
 }

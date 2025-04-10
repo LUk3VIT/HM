@@ -150,53 +150,50 @@
                         <article class="list">
                             <div>
                                 <label>Perícias: </label>
-                                <div id="inputs">
-                                    <input type="text">
+                                <div id="inputsPeri">
+
                                 </div>
-                                <button type="button" onclick="addInputOnClick()">+</button>
+                                <button type="button" onclick="addInputOnClick('inputsPeri')">+</button>
+                                <button type="button" onclick="subInputOnClick('inputsPeri')">x</button>
                             </div>
 
                             <div>
                                 <label>Sentidos: </label>
-                                <div id="inputs">
-                                    <input type="text">
+                                <div id="inputsSent">
+                                    
                                 </div>
-                                <button type="button" onclick="addInputOnClick()">+</button>
-                            </div>
-
+                                <button type="button" onclick="addInputOnClick('inputsSent')">+</button>
+                                <button type="button" onclick="subInputOnClick('inputsSent')">x</button>
                             <div>
                                 <label>Idiomas: </label>
-                                <div id="inputs">
-                                    <input type="text">
+                                <div id="inputsIdio">
+                                    
                                 </div>
-                                <button type="button" onclick="addInputOnClick()">+</button>
+                                <button type="button" onclick="addInputOnClick('inputsIdio')">+</button>
+                                <button type="button" onclick="subInputOnClick('inputsIdio')">x</button>
                             </div>
 
                             <div>
                                 <label>ND</label>
-                                <div id="inputs">
-                                    <input type="text">
-                                </div>
-                                <button type="button" onclick="addInputOnClick()">+</button>
+                                <input type="text">
                             </div>
                         </article>
                 </div>
 
                 <div class="habilidade">
-                    <article class="list">
-                        <input class="list_p" type="text" placeholder="Habilidade">
-                        <textarea></textarea>
-                    </article>
-                    <button type="button">
-                        Adicionar
-                    </button>
+                    <div id="divHabil">
+                        
+                    </div>
+                    <button type="button" onclick="addHabilitOnClick('divHabil')">+</button>
+                    <button type="button" onclick="subHabilitOnClick('divHabil')">x</button>
                 </div>
 
                 <div class="acoes">
-                    <article class="list">
-                        <input type="text" placeholder="Ação">
-                    </article>
-                    <button type="button">Adicionar</button>
+                    <div id="divAcoes">
+                        
+                   </div>
+                    <button type="button" onclick="addAcoesOnClick('divAcoes')">+</button>
+                    <button type="button" onclick="subAcoesOnClick('divAcoes')">x</button>
                 </div>
 
                 <div class="card-body">

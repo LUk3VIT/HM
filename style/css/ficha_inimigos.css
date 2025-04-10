@@ -36,8 +36,6 @@
 
 .card {
     margin: 5px;
-    width: 55rem;
-    height: 57rem;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
