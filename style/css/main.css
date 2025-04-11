@@ -1,7 +1,6 @@
-.Corpo{
+.corpo{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     height: 100%;
     min-height: 100%;
 }
@@ -33,6 +32,22 @@
     height: 100%;
     background: #1C1C1C;
     color: #ffffff;
+}
+
+.prinBtn{
+    color: #D3D3D3;
+    text-decoration: none;
+    border: 5px solid #8B6E58;
+    padding: 10px;
+    border-radius: 10px;
+    background: #B67F55;
+    margin: 5px;
+    transition: transform 0.3s ease;
+}
+
+.prinBtn:hover{
+    transform: scale(1.1);
+    border: 2.5px solid #8B4513;
 }
 
 .rodape{
